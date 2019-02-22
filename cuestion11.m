@@ -8,7 +8,7 @@ rx_salida = zeros(M, 2*(N+coef)-1);
 b = firpm(coef,[0 0.24 0.26 0.74 0.76 1],[0 0 1 1 0 0]);
 xt = pa3(M,N);
 
-%% Proceso aleatorio N realizaciones N muestras de cada realización
+%% Proceso aleatorio N realizaciones M muestras de cada realización
 % x_t = fliplr(xt);
 % rx = conv(xt, x_t)/N;
 % plot(rx)
