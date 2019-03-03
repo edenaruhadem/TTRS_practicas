@@ -9,7 +9,7 @@ s=sin(2*pi*fc*t);
 m1=.7*sin(2*pi*20*t)+.3*cos(2*pi*70*t);          % create "message"
 m2=.7*sin(2*pi*10*t)+.3*cos(2*pi*50*t);
 x = c.*m1 - s.*m2;
-fd = 10; phi = 0;                                % freq & phase offsets
+fd = 0; phi = 0;                                % freq & phase offsets
 c2 = cos(2*pi*(fc+fd)*t+phi);                   % create cosine for demodulation
 s2 = sin(2*pi*(fc+fd)*t+phi);
 b1 = x.*c2;
