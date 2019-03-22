@@ -10,7 +10,7 @@ m=interp(s,80);
 
 
 fs=fss*80;  % Frecuencia de muestreo (Hz)
-kf=50e3; % Constante de desviación de frecuencia (Hz/V)
+kf=25e3; % Constante de desviación de frecuencia (Hz/V)
 fc=100e3; % Frecuencia de portadora (Hz)
 
 N=length(m); % Número de muestras
@@ -27,4 +27,5 @@ xfm=cos(2*pi*fc*t+2*pi*kf*cumsum(m)*Ts); % Señal modulada en FM
 
 figure(1)
 powerspec(xfm,1/fs);
-
+figure(2)
+powerspec(m,1/fs);

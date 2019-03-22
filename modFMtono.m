@@ -16,7 +16,7 @@ Ts=1/fs;
 t=n*Ts; % Instantes de muestreo
 
 m=sin(2*pi*fm*t); %Señal moduladora
-%% Señal moduladora para el caso (c)
+%% Señal moduladora. FM
 %m = sign(m);
 xfm=cos(2*pi*fc*t+2*pi*kf*cumsum(m)*Ts); % Señal modulada en FM
 
