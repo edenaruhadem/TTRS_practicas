@@ -35,7 +35,7 @@ y = 20*phase(w);
 
 
 figure(1);
-nn=1:500;
+nn=500:1500;
 subplot(311),plot(t(nn),m(nn));
 subplot(312),plot(t(nn),xfm(nn));
 subplot(313),plot(t(nn),y(nn));
